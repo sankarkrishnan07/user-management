@@ -26,7 +26,7 @@ const Form = styled.form`
     position: relative;
 
     input {
-      background-color: #e7f0fe;
+      background-color: var(--color-grey-400);
       background-clip: content-box;
       padding: 0.25rem 0.5rem 0.25rem 1.5rem;
     }

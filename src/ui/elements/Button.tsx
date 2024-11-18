@@ -12,7 +12,7 @@ const variations = {
 
     &:hover {
       color: var(--color-primary);
-      background: #fff;
+      background: var(--color-base-white);
     }
   `,
 
@@ -22,7 +22,7 @@ const variations = {
 
     &:hover {
       color: var(--color-secondary);
-      background: #fff;
+      background: var(--color-base-white);
     }
   `,
 
@@ -33,7 +33,7 @@ const variations = {
 
     &:hover,
     &.-active {
-      color: #48a6ff;
+      color: var(--color-blue-300);
       border-color: currentColor;
     }
   `,
@@ -70,7 +70,8 @@ const Button = styled.button<ButtonProps>`
   }
 
   &:disabled {
-    color: #c7c7c7;
+    color: var(--color-grey-500);
+    border-color: currentColor;
   }
 `;
 

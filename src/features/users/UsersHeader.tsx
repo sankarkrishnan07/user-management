@@ -6,15 +6,15 @@ import { changeView, setSearchBy } from "./userSlice";
 import Flyout from "../../ui/components/Flyout";
 import UserForm from "./UserForm";
 import { ChangeEvent } from "react";
-import {ReactComponent as IconTable} from "./../../assets/icons/table.svg"
-import {ReactComponent as IconCard} from "./../../assets/icons/card.svg"
+import { ReactComponent as IconTable } from "./../../assets/icons/table.svg";
+import { ReactComponent as IconCard } from "./../../assets/icons/card.svg";
 
 const Header = styled.header`
   background: var(--color-base-white);
   padding: 1.5rem 1.5rem 0;
 
   h1 {
-    font-size: 1rem;
+    font-size: var(--fs-20);
     font-weight: 500;
   }
 
@@ -29,6 +29,10 @@ const Row = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  &:first-child {
+    margin-bottom: 0.5rem;
+  }
 `;
 
 const ActionWrap = styled.div`
@@ -68,11 +72,21 @@ export default function UsersHeader() {
       </Row>
       <Row>
         <div>
-          <Button type="button" variant="tertiary" className={view==="table" ? "-active" : ""} onClick={() => handleClick("table")}>
+          <Button
+            type="button"
+            variant="tertiary"
+            className={view === "table" ? "-active" : ""}
+            onClick={() => handleClick("table")}
+          >
             <IconTable />
             Table
           </Button>
-          <Button type="button" variant="tertiary" className={view==="card" ? "-active" : ""} onClick={() => handleClick("card")}>
+          <Button
+            type="button"
+            variant="tertiary"
+            className={view === "card" ? "-active" : ""}
+            onClick={() => handleClick("card")}
+          >
             <IconCard />
             Card
           </Button>

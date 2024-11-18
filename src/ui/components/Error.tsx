@@ -10,7 +10,7 @@ flex-direction: column;
 align-tracks: center;
 justify-content: center;
 gap: 1rem;
-font-size: 20px;
+font-size: 1.25rem;
 max-width: 400px;
 margin: auto;
 

@@ -9,10 +9,18 @@ const GlobalStyles = createGlobalStyle`
         --color-base-white: #fff;
         --color-blue-100: #e7f0fe;
         --color-blue-200: #001628;
+        --color-blue-300: #69bbff;
+        --color-blue-400: #48a6ff;
         --color-grey-100: #e9e9e9;
         --color-grey-200: #fafafa;
         --color-grey-300: #fefefe;
+        --color-grey-400: #e7f0fe;
+        --color-grey-500: #c7c7c7;
         --color-backdrop: rgba(0, 0, 0, 0.3);
+        --box-shadow: 0 0 3px 0 #d437ff;
+
+        --fs-16: 1rem;
+        --fs-20: 1.25rem;
     }
 
     html {

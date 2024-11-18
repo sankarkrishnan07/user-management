@@ -32,7 +32,7 @@ const StyledRow = styled(CommonRow)`
 `;
 
 const Empty = styled.div`
-  font-size: 1rem;
+  font-size: var(--fs-16);
   font-weight: 500;
   min-height: 250px;
   width: 100%;

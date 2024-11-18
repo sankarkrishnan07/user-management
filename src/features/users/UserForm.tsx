@@ -33,7 +33,7 @@ const Wrapper = styled.div`
 `;
 
 const Header = styled.header`
-  font-size: 1rem;
+  font-size: var(--fs-16);
   padding: 1rem 1.5rem;
   border-bottom: 1px solid var(--color-grey-100);
 `;

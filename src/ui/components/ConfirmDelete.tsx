@@ -25,7 +25,7 @@ const Actions = styled.div`
 `;
 
 const Title = styled.h3`
-  font-size: 1rem;
+  font-size: var(--fs-16);
   font-weight: 500;
   display: flex;
   align-items: center;

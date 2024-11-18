@@ -63,7 +63,7 @@ const ImgContainer = styled.div`
 `;
 
 const Name = styled.span`
-  font-size: 1rem;
+  font-size: var(--fs-16);
   color: #222;
 `;
 
