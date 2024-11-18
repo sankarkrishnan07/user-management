@@ -72,6 +72,10 @@ const Button = styled.button<ButtonProps>`
   &:disabled {
     color: var(--color-grey-500);
     border-color: currentColor;
+
+    svg path {
+      stroke: currentColor;
+    }
   }
 `;
 

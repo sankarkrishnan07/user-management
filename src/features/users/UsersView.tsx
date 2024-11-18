@@ -24,7 +24,7 @@ export default function UsersView() {
     searchBy,
     view,
     status,
-    error
+    error,
   } = users;
 
   let { curPage } = users;
@@ -32,8 +32,8 @@ export default function UsersView() {
   const recordsPerPage =
     view === "table" ? RECORDS_PER_PAGE_TABLE : RECORDS_PER_PAGE_CARD;
 
-  if(status === "error") {
-    toast.error(error)
+  if (status === "error") {
+    toast.error(error);
   }
 
   let data: Array<any> = [],

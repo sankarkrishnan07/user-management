@@ -30,9 +30,11 @@ const userSlice = createSlice({
   reducers: {
     changeView(state, action) {
       state.view = action.payload;
+      state.curPage = 1;
     },
     setSearchBy(state, action) {
       state.searchBy = action.payload;
+      state.curPage = 1;
     },
     setCurPage(state, action) {
       state.curPage = action.payload;
