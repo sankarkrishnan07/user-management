@@ -5,6 +5,7 @@ const StyledLogin = styled.div`
   align-content: center;
   height: 100vh;
   background: var(--color-bg);
+  padding: 1rem;
 `;
 
 export default function Login() {

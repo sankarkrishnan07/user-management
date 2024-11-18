@@ -29,6 +29,8 @@ const Row = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap:1rem;
 
   &:first-child {
     margin-bottom: 0.5rem;
@@ -39,6 +41,7 @@ const ActionWrap = styled.div`
   display: flex;
   align-items: center;
   gap: 1rem;
+  flex-wrap: wrap;
 `;
 
 export default function UsersHeader() {

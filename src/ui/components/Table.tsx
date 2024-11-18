@@ -6,6 +6,24 @@ interface CommonRowProps {
   columns: string;
 }
 
+const Wrapper = styled.div`
+  max-width: 100%;
+  overflow-x: auto;
+
+  &::-webkit-scrollbar {
+    height: 0.25rem;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+    border-radius: 0.25rem;
+  }
+`;
+
+const StyledTable = styled.div`
+  min-width: 980px;
+`;
+
 const CommonRow = styled.div.attrs({ role: "row" })<CommonRowProps>`
   display: grid;
   grid-template-columns: ${(props) => props.columns};
@@ -55,7 +73,9 @@ interface TableProps {
 function Table({ children, columns }: TableProps) {
   return (
     <TableContext.Provider value={{ columns }}>
-      <div role="table">{children}</div>
+      <Wrapper>
+        <StyledTable role="table">{children}</StyledTable>
+      </Wrapper>
     </TableContext.Provider>
   );
 }
