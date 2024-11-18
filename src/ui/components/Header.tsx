@@ -21,6 +21,8 @@ const UserName = styled.span`
 
 export default function Header() {
   const { email } = useSelector((state: any) => state.auth);
+  const { status } = useSelector((state: any) => state.auth);
+
   const dispatch = useDispatch<any>();
 
   const [firstName, lastName] = email.split("@")[0].split(".");
@@ -38,6 +40,7 @@ export default function Header() {
         variant="secondary"
         size="small"
         onClick={handleLogout}
+        disabled={status === "loading"}
       >
         <IconLogout />
       </Button>
