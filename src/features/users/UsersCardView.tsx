@@ -5,7 +5,7 @@ const Cards = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem;
-  padding: 1.5rem;
+  padding: 1.5rem 0;
   max-width: 75rem;
   margin: auto;
 `;
