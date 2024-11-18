@@ -30,7 +30,7 @@ const Row = styled.div`
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap:1rem;
+  gap: 0.5rem;
 
   &:first-child {
     margin-bottom: 0.5rem;
@@ -40,7 +40,7 @@ const Row = styled.div`
 const ActionWrap = styled.div`
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
   flex-wrap: wrap;
 `;
 
